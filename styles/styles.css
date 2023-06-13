@@ -40,6 +40,7 @@ header {
   height: 100vh;
   color: var(--color-white);
   overflow: hidden;
+  padding: 0 !important;
 }
 
 .header-content {
@@ -66,26 +67,22 @@ header {
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 60%;
-  width: 100%;
+  height: 90%;
+  width: 68%;
   margin-left: 4rem;
   background-color: var(--color-black);
-  transition: all 2s ease-in-out;
-  transform: translateY(10%);
+  transition: all 0.4s ease-in-out;
 }
-.header-content .left-header .img {
-  border-radius: 100px;
+.header-content .left-header .image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: all 3s ease-in-out;
-  filter: greyscale(100%);
-  transform: translateX(-100%);
-  transform: translateY(0%);
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(100%);
 }
-.header-content .left-header .img:hover {
-  filter: greyscale(100%);
+.header-content .left-header .image img:hover {
+  filter: grayscale(0);
 }
 .header-content .right-header {
   display: flex;
@@ -114,7 +111,92 @@ header {
   line-height: 2rem;
 }
 
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.about-container .right-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.about-container .right-about .about-item {
+  border: 1px solid var(--color-grey-5);
+  border-radius: 1.5px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.about-container .right-about .about-item:hover {
+  cursor: default;
+  transform: translateY(-5px);
+  border: 1px solid var(--color-secondary);
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+}
+.about-container .right-about .about-item .about-text {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.about-container .right-about .about-item .about-text .large-text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+.about-container .right-about .about-item .about-text .small-text {
+  padding-left: 3rem;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--color-grey-1);
+  letter-spacing: 2px;
+}
+.about-container .right-about .about-item .about-text .small-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--color-grey-5);
+}
+.about-container .left-about {
+  padding-right: 5rem;
+}
+.about-container .left-about p {
+  line-height: 2rem;
+  padding: 1rem;
+  color: var(--color-grey-1);
+}
+.about-container .left-about h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 
+about-stats {
+  padding-bottom: 4rem;
+}
+about-stats .progress-bars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+about-stats .progress-bars .progress-bar {
+  display: flex;
+  flex-direction: column;
+}
+about-stats .progress-bars .progress-bar .prog-title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+about-stats .progress-bars .progress-bar .progress-con {
+  display: flex;
+  align-items: center;
+}
+about-stats .progress-bars .progress-bar .progress-con .prog-text {
+  color: var(--color-grey-2);
+}
 
 .btn-con {
   display: flex;
@@ -185,8 +267,8 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: var(--color-grey5);
-  transition: all 4s ease-in-out;
+  color: var(--color-grey-5);
+  transition: all 0.4s ease-in-out;
   z-index: -1;
   transform: translate(-50%, -50%);
   font-weight: 800;
@@ -218,7 +300,6 @@ section {
   display: none;
   transform: translateY(0) scale(1);
   background-color: slateblue;
-  
 }
 
 .sect3 {
@@ -261,6 +342,9 @@ section {
   background-color: var(--color-secondary) !important;
   transition: all 0.4s ease-in-out;
 }
+.controlls .active-btn i {
+  color: var(--color-white) !important;
+}
 .controlls .control {
   padding: 1rem;
   cursor: pointer;
@@ -277,68 +361,3 @@ section {
   color: var(--color-grey2);
   pointer-events: none;
 }/*# sourceMappingURL=styles.css.map */
-
-/*About*/
-.about-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding-top: 3.5rem;
-  padding-bottom: 5rem;
-}
-.about-container .right-about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-}
-.about-container .right-about .about-item {
-  border: 1px solid var(--color-grey-5);
-  border-radius: 5px;
-  transition: all 0.4s ease-in-out;
-  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
-}
-.about-container .right-about .about-item:hover {
-  cursor: default;
-  transform: translateY(-5px);
-  border: 1px solid var(--color-secondary);
-  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-}
-.about-container .right-about .about-item .abt-text {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-.about-container .right-about .about-item .abt-text .large-text {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--color-secondary);
-}
-.about-container .right-about .about-item .abt-text .small-text {
-  padding-left: 3rem;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  color: var(--color-grey-1);
-  letter-spacing: 2px;
-}
-
-.about-container .right-about .about-item .abt-text .small-text::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 15px;
-  width: 2rem;
-  height: 2px;
-  background-color: var(--color-grey-5);
-}
-.about-container .left-about {
-  padding-right: 5rem;
-}
-.about-container .left-about p {
-  line-height: 2rem;
-  padding: 1rem;
-  color: var(--color-grey-1);
-}
-.about-container .left-about h4 {
-  font-size: 2rem;
-  text-transform: uppercase;
-}
