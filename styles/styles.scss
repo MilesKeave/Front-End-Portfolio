@@ -265,7 +265,7 @@ header{
             align-items: flex-start;
             display: grid inline-block;
             grid-template-columns: repeat(auto-fit, 3, 1fr);
-            grid-gap: 1.6rem;
+            grid-gap: 1vw;
             grid-auto-rows: 0.2fr;
            
             .about-stats {
@@ -377,8 +377,8 @@ header{
     
     grid-template-columns: repeat(3, 2fr);
     grid-gap: 0.5rem;
-    column-gap: 0.15rem;
-    row-gap: 0.8rem;
+    column-gap: 1vw;
+    row-gap: 1.4vw;
     display: flex;
     flex-wrap: wrap;
     padding-right:0rem;
@@ -415,7 +415,7 @@ header{
 }
 
 .timeline {
-    padding-left:5.4vw;
+    padding-left:6vw;
     padding-right:1vw;
     align-items: flex-start;
     
@@ -638,7 +638,7 @@ header{
     justify-content: center;
     align-self:center;
     width: 30vw;
-    height: 6vw;
+    height: 10vw;
     margin-left:8vw;
     margin-right:20vw;
     font-size: 1.7vw;
