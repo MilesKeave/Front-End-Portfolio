@@ -197,6 +197,7 @@ header{
     overflow-x: hidden !important;
     
     .right-about{
+        flex:1;
         margin-right: 10px;
         padding: 10px;
 
@@ -244,13 +245,13 @@ header{
          }
         
         
-         &:hover {
-            cursor: default;
-            transform: translateY(-5px);
-            border: 1px solid var(--color-secondary);
-            border-radius:15px;
-            box-shadow: 1px 4px 15px rgba(0,0,0,.32);
-        }
+        //  &:hover {
+        //     cursor: default;
+        //     transform: translateY(-5px);
+        //     border: 1px solid var(--color-secondary);
+        //     border-radius:15px;
+        //     box-shadow: 1px 4px 15px rgba(0,0,0,.32);
+        // }
 
     
         .right-skills {
@@ -272,7 +273,7 @@ header{
                 transition: all .4s ease-in-out;
                 
                 padding-left: 2.5rem;
-                padding-right: 1rem;
+                padding-right: 0rem;
                 padding-bottom:2rem;
                 
                 .abt-text {
@@ -307,8 +308,9 @@ header{
     }
 
     .left-about {
+        flex:1;
         
-        min-height:655px;
+        //min-height:655px;
         position:relative;
         top: 0;
         animation: 1.5s fadeInLeft;
@@ -325,7 +327,7 @@ header{
             text-align: center;
             font-size: 1.2rem;
             line-height: 2rem;
-            padding: 2.1rem;
+            padding: 2.4rem;
             color: var(--color-grey-1);
         }
         h4 {
@@ -366,14 +368,16 @@ header{
 }
 
 .skill-logos{
-    align-items: flex-start;
+    //align-items: flex-start;
+    align-items: center;
     
     grid-template-columns: repeat(3, 2fr);
-    grid-gap: 1rem;
-    column-gap: 3.2rem;
-    row-gap: 1rem;
+    grid-gap: 0.5rem;
+    column-gap: 0.15rem;
+    row-gap: 0.8rem;
     display: flex;
     flex-wrap: wrap;
+    padding-right:0rem;
 
     
     
@@ -563,6 +567,7 @@ header{
 }
 
 .about-stats {
+    padding-right:0rem;
     padding-bottom: 4rem;
     .progress-bars {
         display: grid;

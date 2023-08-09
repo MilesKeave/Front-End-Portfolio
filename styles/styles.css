@@ -154,6 +154,7 @@ header {
   overflow-x: hidden !important;
 }
 .about-container .right-about {
+  flex: 1;
   margin-right: 10px;
   padding: 10px;
   position: relative;
@@ -181,13 +182,6 @@ header {
   justify-content: center;
   align-content: center;
 }
-.about-container .right-about:hover {
-  cursor: default;
-  transform: translateY(-5px);
-  border: 1px solid var(--color-secondary);
-  border-radius: 15px;
-  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-}
 .about-container .right-about .right-skills {
   -o-object-fit: cover;
      object-fit: cover;
@@ -204,7 +198,7 @@ header {
   border-radius: 0px;
   transition: all 0.4s ease-in-out;
   padding-left: 2.5rem;
-  padding-right: 1rem;
+  padding-right: 0rem;
   padding-bottom: 2rem;
 }
 .about-container .right-about .right-skills .about-stats .abt-text {
@@ -235,7 +229,7 @@ header {
   background-color: var(--color-grey-5);
 }
 .about-container .left-about {
-  min-height: 655px;
+  flex: 1;
   position: relative;
   top: 0;
   animation: 1.5s fadeInLeft;
@@ -250,7 +244,7 @@ header {
   text-align: center;
   font-size: 1.2rem;
   line-height: 2rem;
-  padding: 2.1rem;
+  padding: 2.4rem;
   color: var(--color-grey-1);
 }
 .about-container .left-about h4 {
@@ -284,14 +278,15 @@ header {
 }
 
 .skill-logos {
-  align-items: flex-start;
+  align-items: center;
   grid-template-columns: repeat(3, 2fr);
-  grid-gap: 1rem;
-  -moz-column-gap: 3.2rem;
-       column-gap: 3.2rem;
-  row-gap: 1rem;
+  grid-gap: 0.5rem;
+  -moz-column-gap: 0.15rem;
+       column-gap: 0.15rem;
+  row-gap: 0.8rem;
   display: flex;
   flex-wrap: wrap;
+  padding-right: 0rem;
 }
 .skill-logos .skill-logo {
   width: 180px;
@@ -458,6 +453,7 @@ header {
 }
 
 .about-stats {
+  padding-right: 0rem;
   padding-bottom: 4rem;
 }
 .about-stats .progress-bars {
