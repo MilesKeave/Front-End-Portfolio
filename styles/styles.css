@@ -239,9 +239,8 @@ header {
 .about-container .left-about p {
   text-align: center;
   font-size: 1.5vw;
-  line-height: 3.2vh;
   padding: 2vh;
-  line-height: 2.2vw;
+  line-height: 2.3vw;
   color: var(--color-grey-1);
 }
 .about-container .left-about h4 {
@@ -388,11 +387,11 @@ header {
 
 .portfolios {
   animation: 1.5s fadeInDown2;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2vw;
+  padding-right: 2vw;
   display: grid;
   grid-template-columns: repeat(3, 2fr);
-  grid-gap: 2rem;
+  grid-gap: 2vw;
   padding-bottom: 2rem;
   flex-wrap: wrap;
 }
@@ -518,7 +517,7 @@ header {
   justify-content: center;
   align-self: center;
   width: 30vw;
-  height: 10vw;
+  height: 6vw;
   margin-left: 8vw;
   margin-right: 20vw;
   font-size: 1.7vw;
@@ -612,7 +611,6 @@ header {
 section {
   display: block;
   min-height: 100vh;
-  min-width: 100rem;
   width: 100%;
   left: 0;
   top: 0;
@@ -625,6 +623,7 @@ section {
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
   background-color: var(--color-primary);
+  height: 100vh;
 }
 
 .sect1 {

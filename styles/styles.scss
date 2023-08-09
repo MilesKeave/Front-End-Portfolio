@@ -329,9 +329,9 @@ header{
         p {
             text-align: center;
             font-size: 1.5vw;
-            line-height: 3.2vh;
+            
             padding: 2vh;
-            line-height: 2.2vw;
+            line-height: 2.3vw;
             color: var(--color-grey-1);
         }
         h4 {
@@ -486,6 +486,7 @@ header{
     .link{
         padding-left: 10px;
         padding-right: 10px;
+       
     }
 
 
@@ -506,12 +507,12 @@ header{
 
 
 
-    padding-left: 2rem;
-    padding-right:2rem;
+    padding-left: 2vw;
+    padding-right:2vw;
 
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    grid-gap: 2rem;
+    grid-gap: 2vw;
     padding-bottom: 2rem;
 
     
@@ -637,7 +638,7 @@ header{
     justify-content: center;
     align-self:center;
     width: 30vw;
-    height: 10vw;
+    height: 6vw;
     margin-left:8vw;
     margin-right:20vw;
     font-size: 1.7vw;
@@ -748,7 +749,7 @@ section{
 
     display: block;
     min-height: 100vh;
-    min-width: 100rem;
+    
     width: 100%;
     left: 0;
     top: 0;
@@ -763,6 +764,7 @@ section{
     transition: all .4s ease-in-out;
     //background-color: rgb(53, 53, 70);
     background-color: var(--color-primary);
+    height: 100vh;
 }
 
 .sect1{
