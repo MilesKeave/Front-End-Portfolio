@@ -383,6 +383,7 @@ header {
   animation: 1.5s fadeInUp2;
   padding: 1rem 0;
   text-align: center;
+  font-size: 1.5vw;
 }
 
 .portfolios {
@@ -396,14 +397,14 @@ header {
   flex-wrap: wrap;
 }
 .portfolios .portfolio-item {
-  max-width: 200;
-  max-height: 200;
+  width: 30vw;
+  height: 20vw;
   position: relative;
   border-radius: 15px;
 }
 .portfolios .portfolio-item img {
   width: 100%;
-  height: 300px;
+  height: 20vw;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
@@ -425,9 +426,9 @@ header {
   transition: all 0.4s ease-in-out;
 }
 .portfolios .portfolio-item .hover-items h3 {
-  font-size: 1.5rem;
+  font-size: 2vw;
   color: var(--color-grey-1);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2vw;
 }
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
@@ -437,8 +438,8 @@ header {
 .portfolios .portfolio-item .hover-items .icons .icon {
   background-color: var(--color-primary);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 5vw;
+  height: 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
