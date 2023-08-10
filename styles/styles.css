@@ -553,6 +553,17 @@ header {
   margin-left: 1.7vw;
   overflow: hidden;
 }
+.main-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-100%);
+  transition: all 2s ease-out;
+  z-index: -1;
+  border-radius: 10vh;
+  overflow: hidden;
+}
 .main-btn:hover {
   transition: all 2s ease-out;
   border-radius: 10vh;
