@@ -883,6 +883,7 @@ section {
   display: block; /* Change 'none' to 'block' */
   transform: translateY(0) scale(1);
   background-color: var(--color-new);
+  min-height: 100vh;
 }
 
 .sect4 {
