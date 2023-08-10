@@ -41,6 +41,11 @@ a {
   font-family: inherit;
 }
 
+.padding2 {
+  padding-top: 4rem;
+  background-color: var(--color-new);
+}
+
 header {
   height: 100vh;
   color: var(--color-white);
@@ -255,6 +260,86 @@ header {
   border: 1px solid var(--color-secondary);
   border-radius: 15px;
   box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+}
+
+.info {
+  background-color: var(--color-primary);
+  min-height: 100vh;
+}
+
+.sub-title {
+  background-color: var(--color-new);
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 2vw;
+}
+.sub-title h3 {
+  animation: 1.5s fadeInUp2;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-weight: 200;
+}
+.sub-title h3 span {
+  color: var(--color-secondary);
+}
+
+.dex-imgs {
+  animation: 1.5s fadeInDown2;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  grid-template-rows: repeat(2, 2fr);
+  margin-top: 3vw;
+  padding-bottom: 1.4vh;
+  align-items: center;
+  justify-items: center;
+  grid-row-gap: 5vh;
+  grid-column-gap: 5vw;
+}
+.dex-imgs .Dex-img {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+  height: 35vw;
+  width: 20vw;
+  background-repeat: no-repeat;
+  border-radius: 6vw;
+  align-items: center;
+  justify-items: center;
+  background-size: cover;
+}
+.dex-imgs .Dex-img .one {
+  height: 35vw;
+  width: 20vw;
+  background-image: url("../img/AgVoice1.png");
+  background-size: cover;
+  border-radius: 2vw;
+}
+.dex-imgs .Dex-img .two {
+  height: 35vw;
+  width: 20vw;
+  background-image: url("../img/AgVoice2.png");
+  background-size: cover;
+  border-radius: 2vw;
+}
+.dex-imgs .Dex-img .three {
+  height: 35vw;
+  width: 20vw;
+  background-image: url("../img/AgVoice3.png");
+  background-size: cover;
+  border-radius: 2vw;
+}
+.dex-imgs .Dex-img .four {
+  height: 35vw;
+  width: 20vw;
+  background-image: url("../img/AgVoice4.png");
+  background-size: cover;
+  border-radius: 2vw;
 }
 
 .stat-title {
@@ -586,13 +671,16 @@ header {
 }
 
 .main-title {
-  animation: 1.5s fadeInUp2;
+  padding-bottom: 2vw;
+  padding-top: 2vw;
+  background-color: var(--color-new);
   text-align: center;
 }
 .main-title h2 {
+  animation: 1.5s fadeInUp2;
   position: relative;
   text-transform: uppercase;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 700;
 }
 .main-title h2 span {
@@ -611,7 +699,20 @@ header {
 }
 
 .padding {
-  padding-top: 4rem;
+  padding-top: 2rem;
+}
+
+.padding2 {
+  padding-top: 2rem;
+  background-color: var(--color-new);
+}
+
+.dex-link {
+  align-items: center;
+  text-align: center;
+  font-size: 2vw;
+  color: #60755c;
+  padding-bottom: 3vh;
 }
 
 section {
