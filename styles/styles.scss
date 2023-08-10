@@ -650,7 +650,7 @@ header{
 
 .main-btn{
     margin-bottom:5vh;
-    border-radius: 5vh;
+    //border-radius: 5vh;
     color: inherit;
     position: relative;
     border: 0.2vw solid var(--color-secondary);
@@ -662,6 +662,7 @@ header{
     overflow:hidden;
     height: 4vw;
     width:17vw;
+    overflow: hidden;
     .btn-text{
         padding: 2vh;
         margin-left:1vw;
@@ -674,11 +675,12 @@ header{
         display: flex;
         align-items:center;
         justify-content:center;
-        border-radius: 10vh;
+        //border-radius: 10vh;
         padding: 2.2vh;
         width: 7vw;
         height: 7vw;
         margin-left: 1.7vw;
+        overflow: hidden;
         
 
 
@@ -692,12 +694,14 @@ header{
         transition: all 2s ease-out;
         z-index:-1;
         border-radius: 10vh;
+        overflow: hidden;
 
 
     }
     &:hover{
         transition: all 2s ease-out;
         border-radius: 10vh;
+        overflow: hidden;
         &::before{
 
             width:100%;
@@ -705,6 +709,7 @@ header{
             border-radius: 10vh;
             background-color: var(--color-secondary);
             transform: translateX(0%);
+            overflow: hidden;
             
 
     }
