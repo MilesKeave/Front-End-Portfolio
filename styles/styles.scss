@@ -690,11 +690,13 @@ header{
         position:absolute;
         top: 0;
         right:0;
+        border-radius: 10vh;
         transform: translateX(-100%);
-       //transition: all 2s ease-out;
+        overflow: hidden;
+        transition: all 2s ease-out;
         z-index:-1;
         border-radius: 10vh;
-        overflow: hidden;
+        
 
 
     }
@@ -702,6 +704,7 @@ header{
         transition: all 2s ease-out;
         border-radius: 10vh;
         overflow: hidden;
+        //transform: translateX(-100%);
         &::before{
 
             width:100%;
