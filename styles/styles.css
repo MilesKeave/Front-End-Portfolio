@@ -309,7 +309,7 @@ header {
 
 .timeline {
   padding-left: 6vw;
-  padding-right: 1vw;
+  padding-right: 2vw;
   align-items: flex-start;
   grid-template-columns: repeat(3, 2fr);
   display: flex;
@@ -326,7 +326,7 @@ header {
 }
 .timeline .timeline-item .tl-icon {
   position: absolute;
-  left: -27px;
+  left: -10px;
   top: 0;
   background-color: var(--color-secondary);
   width: 4vw;
