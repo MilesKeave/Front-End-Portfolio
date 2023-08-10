@@ -524,8 +524,6 @@ header {
 }
 
 .main-btn {
-  margin-bottom: 5vh;
-  border-radius: 5vh;
   color: inherit;
   position: relative;
   border: 0.2vw solid var(--color-secondary);
@@ -537,6 +535,7 @@ header {
   overflow: hidden;
   height: 4vw;
   width: 17vw;
+  overflow: hidden;
 }
 .main-btn .btn-text {
   padding: 2vh;
@@ -548,25 +547,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10vh;
   padding: 2.2vh;
   width: 7vw;
   height: 7vw;
   margin-left: 1.7vw;
-}
-.main-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateX(-100%);
-  transition: all 2s ease-out;
-  z-index: -1;
-  border-radius: 10vh;
+  overflow: hidden;
 }
 .main-btn:hover {
   transition: all 2s ease-out;
   border-radius: 10vh;
+  overflow: hidden;
 }
 .main-btn:hover::before {
   width: 100%;
@@ -574,9 +564,9 @@ header {
   border-radius: 10vh;
   background-color: var(--color-secondary);
   transform: translateX(0%);
-  border-radius: 10vh;
+  overflow: hidden;
 }
-.main-btn i {
+.main-btn:hover i {
   display: flex;
   font-size: 1.2rem;
   color: var(--color-grey2);

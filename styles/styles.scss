@@ -649,7 +649,7 @@ header{
 }
 
 .main-btn{
-    margin-bottom:5vh;
+    
     //border-radius: 5vh;
     color: inherit;
     position: relative;
@@ -685,19 +685,19 @@ header{
 
 
     }
-    &::before{
-        content:'';
-        position:absolute;
-        top: 0;
-        right:0;
-        transform: translateX(-100%);
-        transition: all 2s ease-out;
-        z-index:-1;
-        border-radius: 10vh;
-        overflow: hidden;
+    // &::before{
+    //     content:'';
+    //     position:absolute;
+    //     top: 0;
+    //     right:0;
+    //     transform: translateX(-100%);
+    //     transition: all 2s ease-out;
+    //     z-index:-1;
+    //     border-radius: 10vh;
+    //     overflow: hidden;
 
 
-    }
+    // }
     &:hover{
         transition: all 2s ease-out;
         border-radius: 10vh;
@@ -720,6 +720,7 @@ header{
         pointer-events: none;
     }
 
+}
 }
 
 
