@@ -17,7 +17,7 @@ document.getElementById("test").children[0].className += " load"; */
 const nav = document.getElementById("nav");
 window.onscroll = function () { 
     console.log(document.documentElement.scrollTop);
-    if (document.documentElement.scrollTop >= 55 ) {
+    if (document.documentElement.scrollTop >= 25 ) {
         nav.classList.add("nav-colored");
         nav.classList.remove("nav-transparent");
     } 

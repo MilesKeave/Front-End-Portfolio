@@ -601,7 +601,7 @@ header{
 
 .port-text {
     animation: 1.5s fadeInUp2;
-    padding: 1rem 0;
+    padding: 3vw 0;
     text-align: center;
     font-size: 1.5vw;
 
@@ -610,15 +610,16 @@ header{
 .portfolios {
 
     animation: 1.5s fadeInDown2;
-
-
+    background-color: var(--color-primary);
+    padding-top:4vw;
 
     padding-left: 2vw;
     padding-right:2vw;
 
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-gap: 2vw;
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 7vw;
+    column-gap: 0vw;
     padding-bottom: 2rem;
     
 
@@ -627,6 +628,10 @@ header{
     flex-wrap: wrap;
     
     .portfolio-item {
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 30vw;
         height: 20vw;
         
@@ -869,7 +874,7 @@ header{
 
 .padding{
 
-    padding-top: 2rem;
+    padding-top: 7vh;
 
 
 }
@@ -1145,7 +1150,7 @@ section{
     justify-content: center;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-   
+    grid-gap: 1.5vw;
     
     padding: 10px;
     text-align: center;
@@ -1210,8 +1215,10 @@ section{
         justify-content: center;
         margin: .7rem 0;
         box-shadow: var(--box-shawdow1);
+        font-size: 2vw;
+
         i{
-            font-size: 1.2rem;
+            font-size: 0rem;
             color: var( --color-grey2);
             pointer-events: none;
         }
