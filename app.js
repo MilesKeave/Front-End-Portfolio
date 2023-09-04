@@ -1,5 +1,5 @@
 
-
+import MultiScreen from "multi-screen.js";
 
 //Nav Bar add color on scroll
 
