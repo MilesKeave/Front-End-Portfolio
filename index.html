@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css' >
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css' >
+    <link href="styles/reset.css" type="text/css" rel="stylesheet" />
+    <link href="styles/demo-styles.css" type="text/css" rel="stylesheet" />
+    <link href="../multi-screen-css.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+    <script type="text/javascript" src="../multi-screen.js"></script>
+
+
+
     <title>Portfolio</title>
     <link rel="stylesheet" href ="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -15,9 +26,14 @@
 
 <body class="main-content">
 
-    
-    <a href="about.html" class="fill-div">
-        <div class="background-container">
+
+    <div id="center-screen" class="ms-container ms-default fill-div sec1">
+
+       
+       
+        <div class="background-container fill-div">
+
+           
         
 
             <div class="splash-container"></div>
@@ -41,20 +57,645 @@
                         </h1>
                 </div>
 
+                <div class = "button-div"> 
+
+                <button href="javascript:void(0)" class=" continue-btn shrink-border ms-nav-link button-box" data-ms-target="second-screen" data-ms-exit-animation="top" data-ms-enter-animation="bottom">
+                Continue </button>
+            </div>
+           
+
         </div>
-     </a>
-       <!--  <h2 class="me">
-            Designer     Programmer     Adventurer 
-        </h2> -->
+        
+   
+
+
+    </div>
+
+       <!--   Page 2  -->
+
+        <div id="second-screen" class="ms-container sec2">
+
+            
+			
+            <nav class = "nav-bar" id="nav">
 
         
 
 
+                <button class="control control-1 ms-nav-link shrink-border button-box" href="javascript:void(0)"  data-ms-target="center-screen" data-ms-exit-animation="bottom" data-ms-enter-animation="top">
+                        
+                    <i class="fa-solid fa-house ms-nav-link" style = "font-size:1.7rem" href="javascript:void(0)"  data-ms-target="center-screen" data-ms-exit-animation="bottom" data-ms-enter-animation="top"></i>
+                </button>
+                <button class="control control-2 ms-nav-link active-btn shrink-border button-box" href="javascript:void(0)"  data-ms-target="second-screen" data-ms-exit-animation="right" data-ms-enter-animation="left">
+                    <i class="control control-2 fa-solid fa-user ms-nav-link fa-solid fa-user" style = "font-size:1.7rem" href="javascript:void(0)"  data-ms-target="second-screen" data-ms-exit-animation="right" data-ms-enter-animation="left"></i></i>
+                   
+                </button>
 
+                <button class="control control-4 ms-nav-link shrink-border button-box" href="javascript:void(0)"  data-ms-target="third-screen" data-ms-exit-animation="left" data-ms-enter-animation="right">
+                    <i class="control control-4 fa-solid fa-folder ms-nav-link" style = "font-size:1.7rem" href="javascript:void(0)"  data-ms-target="third-screen" data-ms-exit-animation="left" data-ms-enter-animation="right"></i></i>
+                   
+                </button>
+               
+                   
+           
+                
+            </nav>
+            
+        
+            
+            <main class="section sect2 about" id = 'about'>
+        
+                <div class="padding">
+        
+                </div>
+        
+                
+                    <div class="main-title">
+                        <h2> Profile</span> </h2>
+                    </div>
+                    <div class="about-container">
+        
+                        <div class="left-about">
+                            <h4>About me</h4>
+                            <p>
+                                Hello! My name is Miles Keaveny and I am a recent graduate from Wesleyan University where I studied Computer Science.
+                                As a kid I grew up in Brooklyn, New york, but moved to London, England in 2014 where I attended an international highschool and completed the IB program, studying Higher level Math, Physics and Economics.
+                                In 2019, I moved to Connecticut where I attended Wesleyan University and played for the Club Soccer Team. In 2022, I studied abroad at the University of Syndey where I found a new passion for surfing!
+                                As a recent graduate, I am now living in Brooklyn and working as a coding instructor and building websites. I have a passion for front-end development, but am open to work as a software engineer of any kind. 
+        
+                            </p>
+                            <div class="btn-con">
+                                <a href="https://github.com/MilesKeave/Front-End-Portfolio/blob/8f24baad6a7e25a2124adc496b21c795e120f949/Miles_Keaveny_Resume-Aug2023.pdf" class="main-btn" title="" download>
+                                    <span class="btn-text">Resume</span>
+                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                </a>
+                            </div>
+                            <div class ="my-links">
+                                <div class="link">
+                                    <a href="https://www.linkedin.com/in/john-miles-keaveny-4a75b8229"><i class="fab fa-linkedin" style = "font-size:1.7rem"></i></a>
+                                </div>
+                                <div class="link">
+                                    <a href="https://github.com/MilesKeave"><i class="fab fa-github" style = "font-size:1.7rem"></i></a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="right-about">
+        
+                            <div class = "profile-img">
+        
+        
+        
+                            </div>
+                        
+                        
+                        
+                            <div class="right-skills">
+        
+        
+                                <div class="about-stats">
+                                    <h4 class="stat-title">My Skills</h4>
+                                    <div class="skill-logos">
+        
+                                        <div class =skill-logo>
+                                            <p class="abt-text">html5</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fab fa-html5"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+                                        <div class =skill-logo>
+                                            <p class="abt-text">CSS3</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fab fa-css3"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+                                        <div class =skill-logo>
+                                            <p class="abt-text">Javascript</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fab fa-js"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+                                        <div class =skill-logo>
+                                            <p class="abt-text">Python</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fab fa-python"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+                                        <div class =skill-logo>
+                                            <p class="abt-text">Java</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fab fa-java"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+        
+                                        <div class =skill-logo>
+                                            <p class="abt-text">WordPress</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fa-brands fa-wordpress"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+
+                                        <div class =skill-logo>
+                                            <p class="abt-text">JQuery</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fa-brands fa-query"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+        
+        
+        
+                                        <div class =skill-logo>
+                                            <p class="abt-text">C#</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fab fa-code"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+                                        <div class =skill-logo>
+                                            <p class="abt-text">Swift/Xcode</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fab fa-swift"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+                                        <div class =skill-logo>
+                                            <p class="abt-text">React-Native</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fab fa-react"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+                                        <div class =skill-logo>
+                                            <p class="abt-text">React</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fab fa-react"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+                                        <div class =skill-logo>
+                                            <p class="abt-text">REST API</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fa-regular fa-webhook"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+                                        <div class =skill-logo>
+                                            <p class="abt-text">Unity</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fab fa-unity"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+                                        <div class =skill-logo>
+                                            <p class="abt-text">Github</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fab fa-github"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+                                        <div class =skill-logo>
+                                            <p class="abt-text">SQL</p>
+                                            <div class = "slogo">
+                                                <a href="#" class="icon">
+                                                    <i class="fab fa-database"></i>
+                                                </a>
+                                            </div>
+        
+                                        </div>
+                                       
+                                    
+                                    </div>
+                                </div>
+                            
+                            </div>
+        
+                        </div>
+                    </div>
+        
+        
+                    <div class="timeline2">
+        
+        
+                    <h4 class="stat-title">My Experience</h4>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="tl-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <p class="tl-duration">July 2023 - August 2023</p>
+                            <h5>Coding Instructor<span> - Brothers Building Blocks.</span></h5>
+                            <p>
+                                Developed syllabus and course outline for a three week block based coding course for highschool students.
+                            </p>
+                            <p>
+                                Taught the course content and helped a class of 20 students to develope their individual games using Scratch.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="tl-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <p class="tl-duration">May 2022 - Aug 2022</p>
+                            <h5>Software Engineer Intern<span> - Dexer.</span></h5>
+                            <p>
+                                Developed the user interface for an application utilized by Dexer, a Kansas City-based speech and data collection application for use in the agriculture industry, using Xcode and Swift.
+                            </p>
+                            <p>
+                                Ensured quality of development by testing AGVoice functionality and code reviews.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="tl-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <p class="tl-duration">May 2022 - Aug 2022</p>
+                            <h5>IT DevOps Intern<span> - TDS Telecoms</span></h5>
+                            <p>
+                                Assisted Salesforce DEVOPS engineers in moving software development along an internal development pipeline for a Wisconsin-based national telecommunications provider.
+                            </p>
+                            <p>
+                                Gained experience with software that included Salesforce, Copado, Openshift, Kubernetes, and Jenkins.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="tl-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <p class="tl-duration">Jan 2023 - Aug 2023 </p>
+                            <h5>OurCampus<span> - Wesleyan University</span></h5>
+                            <p>
+                                Engineering the front end features of the ‘OurCampus’ application, Wesleyan's first software application that provides students with campus updates and access to numerous campus resources.
+                            </p>
+                            <p>
+                                Working in Javascript to develop front end features of the OurCampus application using React Native.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="tl-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <p class="tl-duration">2019 - 2023</p>
+                            <h5>Computer Science Degree<span> - Wesleyan University</span></h5>
+                            <p>
+                                Completed My bachaelors degree in computer science at Wesleyan University in May 2023
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="tl-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <p class="tl-duration">2021</p>
+                            <h5>Intro To Programming - Teachers Assistant<span> - Wesleyan University</span></h5>
+                            <p>
+                                Tutored and instructed students to help them learn the course content during labs and help sessions.
+                            
+                            </p>
+                            <p>
+                                Taught beginner students the fundamentals of python language and the best coding practices.
+                            </p>
+                        </div>
+                    </div>
+        
+                    </div>
+
+                    
+                </main>
+				
+	
+			
+		</div>
+
+       <!-- Page 3 -->
+
+        <div id="third-screen" class="ms-container portfolio sec3">
+
+            <body>
+    
+                <nav class = "nav-bar" id="nav">
+
+        
+
+
+                    <button class="control control-1 ms-nav-link shrink-border button-box" href="javascript:void(0)"  data-ms-target="center-screen" data-ms-exit-animation="bottom" data-ms-enter-animation="top">
+                        
+                        <i class="fa-solid fa-house ms-nav-link" style = "font-size:1.7rem" href="javascript:void(0)"  data-ms-target="center-screen" data-ms-exit-animation="bottom" data-ms-enter-animation="top"></i>
+                    </button>
+                    <button class="control control-2 ms-nav-link shrink-border button-box" href="javascript:void(0)"  data-ms-target="second-screen" data-ms-exit-animation="right" data-ms-enter-animation="left">
+                        <i class="control control-2 fa-solid fa-user ms-nav-link fa-solid fa-user" style = "font-size:1.7rem" href="javascript:void(0)"  data-ms-target="second-screen" data-ms-exit-animation="right" data-ms-enter-animation="left"></i></i>
+                       
+                    </button>
+    
+                    <button class="control control-4 ms-nav-link shrink-border button-box" href="javascript:void(0)"  data-ms-target="third-screen" data-ms-exit-animation="bottom" data-ms-enter-animation="top">
+                        <i class="control control-4 fa-solid fa-folder ms-nav-link" style = "font-size:1.7rem" href="javascript:void(0)"  data-ms-target="third-screen" data-ms-exit-animation="bottom" data-ms-enter-animation="top"></i></i>
+                       
+                    </button>
+                   
+                       
+               
+                    
+                </nav>
+     
+            
+    
+    
+    
+    
+        
+         <main class="section sect3 portfolio" id = 'portfolio'>
+    
+                <div class="padding"> 
+    
+                </div>
+    
+                <div class="portfolio-title">
+                    <h2> <span>Portfolio</span></h2>
+                </div>
+                <p class="port-text">
+                    Here is some of my work that I've done in various programming languages.
+                </p>
+                <div class="portfolios">
+                    
+                    <div class="portfolio-item">
+                        <div class="image">
+                            <img src="img/Webpage.png" alt="">
+                        </div>
+                        <div class="hover-items">
+                            <h3>This Website!</h3>
+                            <div class="icons">
+                                <a href="https://github.com/MilesKeave/Front-End-Portfolio" class="icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="image">
+                            <img src="img/LePetit.png" alt="">
+                        </div>
+                        <div class="hover-items">
+                            <h3>Le Petit Universe</h3>
+                            <div class="icons">
+                                <a href="https://github.com/MilesKeave/Le-Petit-Universe-Game" class="icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+    
+                                <a href="https://www.youtube.com/watch?v=Y79Be8OBWB8" class="icon">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="image">
+                            <img src="img/Dexer.jpg" alt="">
+                        </div>
+                        <div class="hover-items">
+                            <h3>Dexer application</h3>
+                            <div class="icons">
+
+                                <a class="icon ms-nav-link" href="javascript:void(0)"  data-ms-target="dexer" data-ms-exit-animation="top" data-ms-enter-animation="bottom">
+                                    <i class="fa-solid fa-image ms-nav-link" href="javascript:void(0)"  data-ms-target="dexer" data-ms-exit-animation="top" data-ms-enter-animation="bottom"></i>
+                                </a>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="image">
+                            <img src="img/OurCampus.png" alt="">
+                        </div>
+                        <div class="hover-items">
+                            <h3>OurCampus App</h3>
+                            <div class="icons">
+                                <a href="https://github.com/OurCampusWes" class="icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="image">
+                            <img src="img/Screen Shot 2023-08-18 at 10.18.32 AM.png" alt="">
+                        </div>
+                        <div class="hover-items">
+                            <h3>X10 LACROSSE</h3>
+                            <div class="icons">
+                                <a href="https://x10-elite.com/" class="icon">
+                                    <i class="fa-brands fa-wordpress"></i>
+                                </a>
+    
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-item">
+                        <div class="image">
+                            <img src="img/Screen Shot 2023-08-30 at 6.04.26 PM.png" alt="">
+                           
+                        </div>
+                        <div class="hover-items">
+                            <h3>Premier League Players</h3>
+                            <div class="icons">
+                                <a href="https://github.com/MilesKeave/PremierLeaguePlayerSearch" class="icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  
+    
+              
+        </main>
+        
+    
+        <script> 
+        
+            $(document).ready(function () {
+
+                
+
+                $('.control-2')
+                        .click(function (e) {
+                          
+                    $('.control-1').removeClass('active-btn');
+                    $('.control-4').removeClass('active-btn');
+                    
+                    $('.control-2').addClass('active-btn');
+                    
+
+              
+                });
+                $('.control-4')
+                        .click(function (e) {
+                            
+                    $('.control-1').removeClass('active-btn');
+                    $('.control-2').removeClass('active-btn');
+                    
+                    $('.control-4').addClass('active-btn');
+                    
+
+                   
+                });
+
+                $('.control-1')
+                        .click(function (e) {
+                           
+                    $('.control-2').removeClass('active-btn');
+                    $('.control-4').removeClass('active-btn');
+                   
+                    $('.control-1').addClass('active-btn');
+                    
+
+                   
+                });
+
+                $('.continue-btn')
+                        .click(function (e) {
+                           
+                    $('.control-2').addClass('active-btn');
+                    $('.control-1').removeClass('active-btn');
+                   
+                    $('.control-4').removeClass('active-btn');
+                    
+
+                   
+                });
+               
+
+            });
+        </script>
+
+
+
+
+
+
+        </div>
+
+
+        <!-- Dexer Page -->
+
+
+        <div id="dexer" class="ms-container">
+
+            <nav class = "nav-bar" id="nav">
+
+        
+
+
+                <button class="control control-1 ms-nav-link shrink-border button-box" href="javascript:void(0)"  data-ms-target="center-screen" data-ms-exit-animation="bottom" data-ms-enter-animation="top">
+                    
+                    <i class="fa-solid fa-house ms-nav-link" style = "font-size:1.7rem" href="javascript:void(0)"  data-ms-target="center-screen" data-ms-exit-animation="bottom" data-ms-enter-animation="top"></i>
+                </button>
+                <button class="control control-2 ms-nav-link shrink-border button-box" href="javascript:void(0)"  data-ms-target="second-screen" data-ms-exit-animation="right" data-ms-enter-animation="left">
+                    <i class="control control-2 fa-solid fa-user ms-nav-link fa-solid fa-user" style = "font-size:1.7rem" href="javascript:void(0)"  data-ms-target="second-screen" data-ms-exit-animation="bottom" data-ms-enter-animation="top"></i></i>
+                   
+                </button>
+
+                <button class="control control-4 ms-nav-link shrink-border button-box" href="javascript:void(0)"  data-ms-target="third-screen" data-ms-exit-animation="bottom" data-ms-enter-animation="top">
+                    <i class="control control-4 fa-solid fa-folder ms-nav-link" style = "font-size:1.7rem" href="javascript:void(0)"  data-ms-target="third-screen" data-ms-exit-animation="bottom" data-ms-enter-animation="top"></i></i>
+                   
+                </button>
+               
+                   
+           
+                
+            </nav>
+    
+        <main class="info">
+    
+            <div class="padding">
+    
+            </div>
+    
+            
+            <div class="main-title">
+                 <h2> Dexer</span> </h2>
+            </div>
+    
+            <div class="sub-title">
+                <h3>
+                    Below are some screenshots of the UI that I developed for Dexer as a Software Engineer Intern in 2022. Dexer is a agriculture tech startup that utilizes a speech recognition software. The Ui below is for a application that Dexer used to test this speech recognition software. You can speak, record, copy and clear your speech data with this app. I used Xcode and Swift to develope the UI.
+                </h3>
+    
+    
+            </div>
+    
+            <div class="dex-imgs">
+                <div class = "Dex-img">
+                    <div class="one">
+                    </div>
+    
+                </div>
+                <div class = "Dex-img">
+                    <div class="two">
+                    </div>
+                </div>
+                <div class = "Dex-img">
+                    <div class="three">
+                    </div>
+                </div>
+                <div class = "Dex-img">
+                    <div class="four">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="dex-link">
+                <a href="https://www.dexerspeed.com/">  https://www.dexerspeed.com/ </a> 
+            </div>
+    
+    
+    
+            
+    
+    
+        </main>
+
+        </div>
            
     
         
-    </div>
+  
 
  
     

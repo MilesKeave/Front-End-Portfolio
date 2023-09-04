@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+*, *::after, *::before {
+  box-sizing: border-box; }
 
 
 
@@ -37,6 +40,126 @@
 
 }
 
+
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase; }
+
+    .active-btn{
+        
+            background-color: transparent;
+            box-shadow: none;
+            color: #e6e6e6; 
+            //border: 3px solid #e6e6e6;
+    }
+  
+   button {
+    position: relative;
+    border: none;
+    font-size: 18px;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    outline: none;
+    border-radius: 3px;
+    margin: 0 10px;
+    padding: 15px 20px;
+    border: 3px solid transparent; }
+    button:active {
+      transform: translateY(3px); }
+    button::after, button::before {
+      border-radius: 3px; }
+  
+  .shrink-border {
+    background-color: transparent;
+    color: #1b1b20; }
+    .shrink-border:hover {
+      background-color: transparent;
+      box-shadow: none;
+      color: #e6e6e6; }
+    .shrink-border::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 3px solid #1b1b20;
+      transition: opacity 0.3s, border 0.3s; }
+    .shrink-border:hover::before {
+      opacity: 0; }
+    .shrink-border::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: 3px solid #e6e6e6;
+      opacity: 0;
+      z-index: -1;
+      transform: scaleX(1.1) scaleY(1.3);
+      transition: transform 0.3s, opacity 0.3s; }
+    .shrink-border:hover::after {
+      opacity: 1;
+      transform: scaleX(1) scaleY(1); }
+  
+  .material-bubble {
+    background-color: transparent;
+    color: #1b1b20;
+    border: none;
+    overflow: hidden;
+    box-shadow: none; }
+    .material-bubble:hover {
+      color: #e6e6e6; }
+    .material-bubble::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 3px solid #1b1b20;
+      transition: opacity 0.3s, border 0.3s; }
+    .material-bubble:hover::before {
+      opacity: 0; }
+    .material-bubble::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 200px;
+      background-color: #494958;
+      border-color: transparent;
+      border-radius: 50%;
+      transform: translate(-10px, -70px) scale(0.1);
+      opacity: 0;
+      z-index: -1;
+      transition: transform 0.3s, opacity 0.3s, background-color 0.3s; }
+    .material-bubble:hover::after {
+      opacity: 1;
+      transform-origin: 100px 100px;
+      transform: scale(1) translate(-10px, -70px); }
+  
+
+.Buttoncontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center; }
+
+    .button-div {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        padding-top: 85vh;
+      }
+
 body{
     background-color: var(--color-primary);
     font-family: 'Poppins', sans-serif;
@@ -44,6 +167,8 @@ body{
     background-color: rgb(58, 70, 53);
     transition: all .4s ease-in-out;
 }
+
+
 
 a{
     display: inline-block;
@@ -152,6 +277,8 @@ header{
     }
 
 }
+
+
 
 
 .portfolio-title{
@@ -607,6 +734,11 @@ header{
 
 }
 
+.portfolio{
+
+    width:100vw;
+}
+
 .portfolios {
 
     animation: 1.5s fadeInDown2;
@@ -843,7 +975,7 @@ header{
 
 .main-title {
     padding-bottom:2vw;
-    padding-top:2vw;
+    
     background-color: var(--color-new);
     font-size: 3vw;
     color:#9da99b;
@@ -874,7 +1006,8 @@ header{
 
 .padding{
 
-    padding-top: 7vh;
+    padding-top: 10vh;
+    background-color: var(--color-new);
 
 
 }
@@ -1177,6 +1310,10 @@ section{
 .nav-colored{
     background-color: var(--color-new);
     transition: 1s ease-in-out;
+    height: 10vh;
+    width: 100vw;
+    transform: translateX(-33%);
+    
 }
 .nav-transparent{
     transition: 1s ease-in-out;
@@ -1194,7 +1331,7 @@ section{
     justify-content: center;
     transform: translateY(0%);
     .active-btn{
-        background-color: var(--color-secondary) !important;
+        background-color: var(--color-new) !important;
         transition: all .4s ease-in-out;
 
         i{
@@ -1209,7 +1346,7 @@ section{
         padding: 1rem;
         cursor: pointer;
         border-radius: 25%;
-        background-color: var(--color-grey3);
+        //background-color: var(--color-grey3);
         display:flex;
         align-items: center;
         justify-content: center;
@@ -1222,6 +1359,7 @@ section{
             color: var( --color-grey2);
             pointer-events: none;
         }
+        
 
 
 

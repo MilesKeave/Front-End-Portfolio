@@ -1,94 +1,78 @@
-// app.js
-
-/* const navbar = document.querySelector('#NavBar');
-let top = navbar.offsetTop;
-function stickynavbar() {
-  if (window.scrollY >= top) {    
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');    
-  }
-}
-window.addEventListener('scroll', stickynavbar);
-
-document.getElementById("test").children[0].className += " load"; */
 
 
-const nav = document.getElementById("nav");
+
+//Nav Bar add color on scroll
+
+const nav = document.getElementsByClassName("nav-bar");
 window.onscroll = function () { 
     console.log(document.documentElement.scrollTop);
-    if (document.documentElement.scrollTop >= 25 ) {
-        nav.classList.add("nav-colored");
-        nav.classList.remove("nav-transparent");
-    } 
-    else {
-        nav.classList.add("nav-transparent");
-        nav.classList.remove("nav-colored");
+    for(var i = 0; i < nav.length; i++) {
+        if (document.documentElement.scrollTop >= 15 ) {
+            nav[i].classList.add("nav-colored");
+            nav[i].classList.remove("nav-transparent");
+        } 
+        else {
+            nav[i].classList.add("nav-transparent");
+            nav[i].classList.remove("nav-colored");
+        }
     }
+
+    
 };
 
-/*const controllLink = document.querySelectorAll(".control");
+//page transitions
 
 
-const homeLink = document.querySelector('.control-1');
-const aboutLink = document.querySelector('.control-2');
-const portfolioLink = document.querySelector('.control-4');
+$(document).ready(function() { 
 
-homeLink.addEventListener('click', () => {
-    window.location.href = 'splash.html';
-});
+    MultiScreen.init(); 
+    
+    $('#topleft-via-top').click(function () {
+    
+        MultiScreen.switch_screens(
+            {target_id: 'top-screen', enter_animation_command: 'top', exit_animation_command: 'bottom', chain_animation_options: 
+                {target_id: 'topleft-screen', enter_animation_command: 'left', exit_animation_command: 'right'}
+            });
+    
+    });
+    
+    $('#right-via-bottomright').click(function () {
+    
+        MultiScreen.switch_screens(
+            {target_id: 'bottomright-screen', enter_animation_command: 'bottomright', exit_animation_command: 'topleft', chain_animation_options: 
+                {target_id: 'right-screen', enter_animation_command: 'top', exit_animation_command: 'bottom'}
+            });
+    
+    });
+    
+    $('#go-crazy').click(function () {
+    
+        // inception...
+        MultiScreen.switch_screens(
+            {target_id: 'bottomright-screen', enter_animation_command: 'bottomright', exit_animation_command: 'topleft', chain_animation_options: 
+                {target_id: 'right-screen', enter_animation_command: 'top', exit_animation_command: 'bottom',
+                    chain_animation_options: 
+                    {target_id: 'topright-screen', enter_animation_command: 'top', exit_animation_command: 'bottom',
+                        chain_animation_options: 
+                        {target_id: 'top-screen', enter_animation_command: 'left', exit_animation_command: 'right',
+                            chain_animation_options: 
+                            {target_id: 'topleft-screen', enter_animation_command: 'left', exit_animation_command: 'right',
+                                chain_animation_options: 
+                                {target_id: 'left-screen', enter_animation_command: 'bottom', exit_animation_command: 'top',
+                                    chain_animation_options: 
+                                    {target_id: 'bottomleft-screen', enter_animation_command: 'bottom', exit_animation_command: 'top',chain_animation_options: 
+                                        {target_id: 'bottom-screen', enter_animation_command: 'right', exit_animation_command: 'left',chain_animation_options: 
+                                            {target_id: 'center-screen', enter_animation_command: 'top', exit_animation_command: 'bottom'}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+    
+    });
+    
+    }); 
 
-aboutLink.addEventListener('click', () => {
-    window.location.href = 'about.html';
-});
-
-portfolioLink.addEventListener('click', () => {
-    window.location.href = 'portfolio.html';
-});
-
-
-
-/*
-const sections = document.querySelectorAll(".section");
-const sectBtns = document.querySelectorAll(".controlls");
-const sectBtn = document.querySelectorAll(".control");
-const allSections = document.querySelector(".main-content");
-
-
-function PageTransition(){
-
-    for( let i = 0; i< sectBtn.length; i++){
-        sectBtn[i].addEventListener('click', function() {
-            let currentBtn = document.querySelectorAll('.active-btn');
-            currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
-            this.className += ' active-btn';
-        })
-    }
-
-    allSections.addEventListener('click', (e) => {
-
-        const id = e.target.dataset.id;
-        if (id){
-
-            sectBtns.forEach((btn)=>{
-                btn.classList.remove('active');
-            })
-            e.target.classList.add('active');
-
-            sections.forEach((section) => {
-                section.classList.remove('active');
-            })
-
-            const element = document.getElementById(id);
-            //console.log(element);
-            //console.log(element.classList);
-            
-            element.classList.add('active');
-        
-
-        }
-    })
-}
-
-PageTransition();
-*/
