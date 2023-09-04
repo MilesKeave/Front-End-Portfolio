@@ -1090,16 +1090,16 @@ section {
   top: 0;
   position: fixed;
   top: 50%;
-  margin-left: 33vw;
+  margin-left: 33.3vw;
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5vw;
   padding: 10px;
   text-align: center;
-  width: 33vw;
+  width: 33.3vw;
   height: 7vh;
-  margin-left: 33vw;
+  margin-left: 33.3vw;
   top: 0px;
 }
 
