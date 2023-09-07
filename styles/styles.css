@@ -897,6 +897,93 @@ header {
   z-index: 2;
 }
 
+.portfolio-item-even:active {
+  width: 100%;
+  background-color: var(--color-new);
+  display: inline-block;
+  border-style: 5px solid black;
+}
+
+.portfolio-item-odd:active {
+  width: 100%;
+  background-color: var(--color-new);
+  border-style: 5px solid black;
+}
+
+.portfolio-item-odd:active .hover-items {
+  overflow: hidden;
+  width: 40%;
+  height: 70%;
+  opacity: 1;
+  border-style: solid black;
+  transform: translateX(70%) translateY(10%) scale(1);
+  z-index: 1;
+}
+
+.portfolio-item-odd:active .hover-item {
+  overflow: hidden;
+  width: 35vw;
+  height: 20vw;
+  background-color: var(--color-primary);
+  border: 1px solid rgb(0, 0, 0);
+  z-index: 0;
+  transform: translateY(5%) translateX(170%);
+}
+
+.portfolio-item-odd:active .hover-item3 {
+  overflow: hidden;
+  width: 60vw;
+  text-align: center;
+  opacity: 1;
+  height: 10vw;
+  background-color: var(--color-primary);
+  border: 2px solid rgb(0, 0, 0);
+  transform: translateY(190%) translateX(50%) scale(1);
+  z-index: 2;
+}
+
+.portfolio-item-odd:active .icons:active .icon {
+  background-color: var(--color-secondary);
+  transform: scale(1.1);
+}
+
+.portfolio-item-even:active .icons:active .icon {
+  background-color: var(--color-secondary);
+  transform: scale(1.1);
+}
+
+.portfolio-item-even:active .hover-items {
+  overflow: hidden;
+  width: 40%;
+  height: 70%;
+  opacity: 1;
+  border-style: solid black;
+  transform: translateX(85%) translateY(15%) scale(1);
+  z-index: 1;
+}
+
+.portfolio-item-even:active .hover-item {
+  overflow: hidden;
+  width: 38vw;
+  height: 20vw;
+  background-color: var(--color-primary);
+  border: 1px solid rgb(0, 0, 0);
+  z-index: 0;
+  transform: translateY(7%) translateX(2%);
+}
+
+.portfolio-item-even:active .hover-item3 {
+  overflow: hidden;
+  width: 60vw;
+  text-align: center;
+  opacity: 1;
+  height: 10vw;
+  background-color: var(--color-primary);
+  border: 2px solid rgb(0, 0, 0);
+  transform: translateY(190%) translateX(5%) scale(1);
+  z-index: 2;
+}
+
 .about-stats {
   padding-right: 0rem;
   padding-bottom: 4rem;
