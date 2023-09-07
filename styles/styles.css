@@ -984,6 +984,10 @@ header {
   z-index: 2;
 }
 
+.desciption {
+  font-size: 1.3em;
+}
+
 .about-stats {
   padding-right: 0rem;
   padding-bottom: 4rem;
