@@ -1169,6 +1169,16 @@ header{
 
 
 }
+.title{
+    font-size: 2.2vw;
+
+
+}
+.description{
+    font-size: 1.9vw;
+
+
+}
 
 .about-stats {
     padding-right:0rem;
@@ -1672,7 +1682,9 @@ section{
     background-color: var(--color-new);
     transition: 1s ease-in-out;
     height: 10vh;
-    width: 33.3vw;
+    width: 100vw;
+    transform: translateX(-33.3%);
+
     padding-bottom: 75px;
     
     
