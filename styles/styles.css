@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -35,7 +36,7 @@
 }
 
 button {
-  font-family: "Montserrat", sans-serif;
+  font-family: "MonaLisa", sans-serif;
   text-transform: uppercase;
 }
 
@@ -179,7 +180,7 @@ button::after, button::before {
 
 body {
   background-color: var(--color-primary);
-  font-family: "Poppins", sans-serif;
+  font-family: "MonoLisa", sans-serif;
   font-size: 1.1rem;
   background-color: rgb(58, 70, 53);
   transition: all 0.4s ease-in-out;
@@ -189,7 +190,7 @@ a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
-  font-family: inherit;
+  font-family: "MonaLisa", sans-serif;
 }
 
 .padding2 {
@@ -215,7 +216,7 @@ header {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.2vw;
-  animation: typing 3s steps(25, end), blink-caret 0.75s step-end 4;
+  animation: typing 2.2s steps(20, end), blink-caret 0.75s step-end 3;
 }
 
 @keyframes typing {
@@ -341,7 +342,7 @@ header {
   width: 100vw;
   /* grid-template-columns: 1fr 1fr; */
   overflow: hidden;
-  min-height: 70vw;
+  min-height: 60vw;
   max-height: 90vw;
   position: relative;
   align-items: center;
@@ -351,18 +352,19 @@ header {
   overflow-x: hidden !important;
 }
 .about-container .right-about {
-  top: 0;
   padding-left: 3vw;
   padding-right: 3vw;
-  padding-bottom: 3vh;
   height: 98%;
-  max-width: 40vw;
+  max-width: 50vw;
   animation: 1.5s fadeInRight;
   display: block;
+  justify-content: center;
+  align-items: center;
+  border-left: 3px black solid;
 }
 .about-container .right-about .profile-img {
-  position: relative;
   border-radius: 15px;
+  margin-top: 10%;
   background-image: url("../img/Screen Shot 2023-09-08 at 3.47.13 PM.png");
   background-size: cover;
   background-position-x: 20%;
@@ -430,7 +432,6 @@ header {
   float: right;
   position: relative;
   margin-left: 3vw;
-  height: 95%;
   width: 50vw;
   animation: 1.5s fadeInRight;
   display: block;
@@ -602,28 +603,10 @@ header {
   font-size: 1.3vw;
 }
 
-.timeline {
-  padding-left: 6vw;
-  padding-right: 2vw;
-  align-items: flex-start;
-  grid-template-columns: repeat(3, 2fr);
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
-  grid-gap: 2vw;
-  padding-bottom: 2vw;
-}
-.timeline .timeline-item {
-  position: relative;
-  max-width: 45vw;
-  padding-left: 3vw;
-  border-left: 1px solid var(--color-grey-5);
-}
-.timeline .timeline-item .tl-icon {
+.tl-icon {
   position: absolute;
-  left: -10px;
-  top: 0;
   background-color: var(--color-pink);
+  transform: translateX(-4vw);
   width: 4vw;
   height: 4vw;
   border-radius: 50%;
@@ -631,37 +614,71 @@ header {
   align-items: center;
   justify-content: center;
 }
-.timeline .timeline-item .tl-icon i {
+.tl-icon i {
   font-size: 1.6vw;
 }
-.timeline .timeline-item .tl-duration {
-  font-family: "MonoLisa", sans-serif;
-  padding: 0.2rem 0.6rem;
-  background-color: var(--color-grey-5);
-  border-radius: 15px;
-  display: inline-block;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.timeline .timeline-item h5 {
-  font-family: "MonoLisa", sans-serif;
-  padding: 1rem 0;
-  text-transform: uppercase;
-  font-size: 1vw;
-  font-weight: 600;
-}
-.timeline .timeline-item h5 span {
-  color: var(--color-grey-2);
-  font-weight: 500;
-  font-size: 1vw;
-}
-.timeline .timeline-item p {
-  font-family: "MonoLisa", sans-serif;
-  color: var(--color-grey-2);
-  font-size: 1.3vw;
-}
 
+/* .timeline {
+    padding-left:6vw;
+    padding-right:2vw;
+    align-items: flex-start;
+
+    grid-template-columns: repeat(3, 2fr);
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100vw;
+
+
+    grid-gap: 2vw;
+    padding-bottom: 2vw;
+    .timeline-item {
+        position: relative;
+        max-width: 45vw;
+        padding-left: 3vw;
+
+        border-left: 1px solid var(--color-grey-5);
+        .tl-icon {
+            position: absolute;
+            left: -10px;
+            top: 0;
+            background-color: var(--color-pink);
+            width: 4vw;
+            height: 4vw;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i { font-size: 1.6vw; }
+        }
+        .tl-duration {
+            font-family: 'MonoLisa', sans-serif;
+            padding: .2rem .6rem;
+            background-color: var(--color-grey-5);
+            border-radius: 15px;
+            display: inline-block;
+            font-size: .8rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        h5 {
+            font-family: 'MonoLisa', sans-serif;
+            padding: 1rem 0;
+            text-transform: uppercase;
+            font-size: 1vw;
+            font-weight: 600;
+            span {
+                color: var(--color-grey-2);
+                font-weight: 500;
+                font-size: 1vw;
+            }
+        }
+        p{ 
+            font-family: 'MonoLisa', sans-serif;
+            color: var(--color-grey-2); 
+        font-size: 1.3vw;}
+    }
+} */
 .my-links {
   display: flex;
   align-items: center;
@@ -1389,7 +1406,7 @@ section {
   transform: translateY(25%);
   animation: 1.5s fadeInUp;
   overflow: visible;
-  font-family: Arial;
+  font-family: "MonaLisa", sans-serif;
   opacity: 1;
   position: absolute;
   font-size: 3vw;
@@ -1431,8 +1448,8 @@ section {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.2vw;
-  animation: typing2 2.3s steps(10, end), blink-caret 0.75s step-end 4;
-  animation-delay: 4s;
+  animation: typing2 2s steps(9, end), blink-caret 0.75s step-end 3;
+  animation-delay: 2.2s;
   animation-fill-mode: forwards;
 }
 
@@ -1454,8 +1471,8 @@ section {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.2vw;
-  animation: typing2 2.4s steps(10, end), blink-caret 0.75s step-end 4;
-  animation-delay: 7s;
+  animation: typing2 2s steps(9, end), blink-caret 0.75s step-end 3;
+  animation-delay: 4.2s;
   animation-fill-mode: forwards;
 }
 
@@ -1475,8 +1492,8 @@ section {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.2vw;
-  animation: typing2 2.3s steps(10, end), blink-caret 0.75s step-end 5;
-  animation-delay: 10.4s;
+  animation: typing2 2s steps(9, end), blink-caret 0.75s step-end 3.5;
+  animation-delay: 6.2s;
   animation-fill-mode: forwards;
 }
 
@@ -1593,4 +1610,199 @@ section {
   font-size: 1rem;
   color: var(--color-steel);
   pointer-events: none;
+}
+
+h1 {
+  font-family: "MonoLisa", sans-serif !important;
+}
+
+p {
+  font-family: "MonoLisa", sans-serif !important;
+}
+
+h2 {
+  font-family: "MonoLisa", sans-serif !important;
+}
+
+/* Responsive Timeline CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .h1,
+*::before .h1,
+*::after .h1 {
+  font-family: "MonoLisa", sans-serif !important;
+}
+* .h3,
+*::before .h3,
+*::after .h3 {
+  font-family: "MonoLisa", sans-serif !important;
+}
+* .p,
+*::before .p,
+*::after .p {
+  font-family: "MonoLisa", sans-serif !important;
+}
+
+body {
+  font-size: 16px;
+  font-family: "MonaLisa", sans-serif;
+}
+
+.timeline {
+  font-family: "MonaLisa", sans-serif;
+  color: black;
+}
+.timeline h1,
+.timeline ul li .content h2 {
+  font-family: "MonaLisa", sans-serif;
+}
+.timeline h1 {
+  font-family: "MonaLisa", sans-serif;
+  background: var(--color-platinum);
+  padding: 70px 0;
+  font-size: 2.5em;
+  text-align: center;
+}
+.timeline ul {
+  font-family: "MonaLisa", sans-serif;
+  background: var(--color-steel);
+  padding: 50px 0;
+}
+.timeline ul li {
+  font-family: "MonaLisa", sans-serif;
+  background: var(--color-platinum);
+  position: relative;
+  margin: 0 auto;
+  width: 5px;
+  padding-bottom: 40px;
+  list-style-type: none;
+}
+.timeline ul li:last-child {
+  padding-bottom: 7px;
+  font-family: "MonoLisa", sans-serif;
+}
+.timeline ul li:before {
+  font-family: "MonoLisa", sans-serif;
+  content: "";
+  background: var(--color-steel);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--color-platinum);
+  border-radius: 50%;
+}
+.timeline ul li .hidden {
+  opacity: 0;
+}
+.timeline ul li .show {
+  font-family: "MonoLisa", sans-serif !important;
+  opacity: 1;
+  animation: 2s fadeInRight;
+}
+.timeline ul li .content {
+  font-family: "MonaLisa", sans-serif;
+  background: var(--color-platinum);
+  position: relative;
+  top: 7px;
+  width: 450px;
+  padding: 2vw;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: black;
+  z-index: 3;
+}
+.timeline ul li .content h2 {
+  font-family: "MonaLisa", sans-serif;
+  font-size: 2vw;
+  color: black;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: solid 1px black;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+.timeline ul li .content h3 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+.timeline ul li .content .time2 {
+  text-align: center;
+  align-items: center;
+  font-family: "MonaLisa", sans-serif;
+  font-size: 2vw;
+  color: black;
+  padding-bottom: 10px;
+  text-align: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.timeline ul li .content p {
+  font-family: "MonaLisa", sans-serif;
+  text-align: center;
+}
+.timeline ul li .content:before {
+  content: "";
+  background: var(--color-platinum);
+  position: absolute;
+  top: 0px;
+  width: 38px;
+  height: 5px;
+}
+.timeline ul li:nth-child(odd) .content {
+  left: 50px;
+  background: var(--color-platinum);
+  background: linear-gradient(-45deg, var(--color-platinum), var(--color-platinum));
+}
+.timeline ul li:nth-child(odd) .content:before {
+  left: -38px;
+}
+.timeline ul li:nth-child(even) .content {
+  left: calc(-450px - 45px);
+  background: var(--color-platinum);
+  background: linear-gradient(45deg, var(--color-platinum), var(--color-platinum));
+}
+.timeline ul li:nth-child(even) .content:before {
+  right: -38px;
+}
+
+/* -------------------------
+   ----- Media Queries ----- 
+   ------------------------- */
+@media screen and (max-width: 1020px) {
+  .timeline ul li .content {
+    width: 41vw;
+  }
+  .timeline ul li:nth-child(even) .content {
+    left: calc(-41vw - 45px);
+  }
+}
+@media screen and (max-width: 700px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li .content {
+    width: calc(100vw - 100px);
+  }
+  .timeline ul li .content h2 {
+    text-align: initial;
+  }
+  .timeline ul li:nth-child(even) .content {
+    left: 45px;
+    background: var(--color-platinum);
+    background: linear-gradient(-45deg, var(--color-platinum), var(--color-platinum));
+  }
+  .timeline ul li:nth-child(even) .content:before {
+    left: -33px;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -1120,8 +1120,23 @@ var MultiScreen = (function() {
 //Nav Bar add color on scroll
 
 const nav = document.getElementsByClassName("nav-bar");
+
+
+const timeLine = document.getElementsByClassName("content");
 window.onscroll = function () { 
     console.log(document.documentElement.scrollTop);
+    for(var i = 0; i < timeLine.length; i++) {
+        if (document.documentElement.scrollTop >= 500 + ((i +1)*280) ) {
+            timeLine[i].classList.remove("hidden");
+			timeLine[i].classList.add("show");
+
+			/* $(timeLine[i]).animate({'opacity':'1'},700); */
+            
+        } 
+        
+    }
+
+	console.log(document.documentElement.scrollTop);
     for(var i = 0; i < nav.length; i++) {
         if (document.documentElement.scrollTop >= 15 ) {
             nav[i].classList.add("nav-colored");
@@ -1191,4 +1206,13 @@ $(document).ready(function() {
     });
     
     }); 
+
+
+
+/* 
+responsive timeline 
+
+ */
+
+
 

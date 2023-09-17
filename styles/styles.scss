@@ -46,7 +46,7 @@
 
 
 button {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'MonaLisa', sans-serif;
     text-transform: uppercase; }
 
     .active-btn{
@@ -172,7 +172,7 @@ button {
 
 body{
     background-color: var(--color-primary);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'MonoLisa', sans-serif;
     font-size: 1.1rem;
     background-color: rgb(58, 70, 53);
     transition: all .4s ease-in-out;
@@ -184,7 +184,7 @@ a{
     display: inline-block;
     text-decoration: none;
     color: inherit; 
-    font-family: inherit;
+    font-family: 'MonaLisa', sans-serif;
 }
 
 .padding2{
@@ -222,8 +222,8 @@ header{
 
 
     animation: 
-        typing 3s steps(25, end),
-        blink-caret .75s step-end 4;
+        typing 2.2s steps(20, end),
+        blink-caret .75s step-end 3;
     
 }
 
@@ -381,7 +381,7 @@ header{
     
     overflow: hidden;
 
-    min-height: 70vw;
+    min-height: 60vw;
     max-height: 90vw ;
     
 
@@ -400,22 +400,26 @@ header{
     overflow-x: hidden !important;
     
     .right-about{
-        top:0;
+        
         
         padding-left: 3vw;
         padding-right:3vw;
-        padding-bottom: 3vh;
+        
         height: 98%;
-        max-width: 40vw;
+        max-width: 50vw;
         animation: 1.5s fadeInRight;
         display: block;
+        justify-content: center;
+        align-items:center;
+        border-left: 3px black solid;
   
         .profile-img{
 
             
-            position:relative;
+            //position:center;
             
             border-radius: 15px;   
+            margin-top: 10%;
             
             //object-fit: cover;
 
@@ -516,7 +520,7 @@ header{
         margin-left: 3vw;
        
         
-        height: 95%;
+        
         width: 50vw;
         animation: 1.5s fadeInRight;
         display: block;
@@ -726,7 +730,20 @@ header{
 
 }
 
-.timeline {
+.tl-icon {
+    position: absolute;
+    background-color: var(--color-pink);
+    transform: translateX(-4vw);
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i { font-size: 1.6vw; }
+}
+
+/* .timeline {
     padding-left:6vw;
     padding-right:2vw;
     align-items: flex-start;
@@ -786,7 +803,7 @@ header{
             color: var(--color-grey-2); 
         font-size: 1.3vw;}
     }
-}
+} */
 
 .my-links{
     display: flex;
@@ -1659,7 +1676,7 @@ section{
     transform: translateY(25%);
     animation: 1.5s fadeInUp;
     overflow: visible;
-    font-family: Arial;
+    font-family: 'MonaLisa', sans-serif;
     opacity: 1;
     position:absolute;
     font-size: 3vw;
@@ -1722,10 +1739,10 @@ section{
     
     
     animation: 
-            typing2 2.3s steps(10, end),
-            blink-caret .75s step-end 4;
+            typing2 2s steps(9, end),
+            blink-caret .75s step-end 3;
 
-    animation-delay: 4s;
+    animation-delay: 2.2s;
     animation-fill-mode: forwards;
 
     
@@ -1754,10 +1771,10 @@ section{
     
     
     animation: 
-            typing2 2.4s steps(10, end),
-            blink-caret .75s step-end 4;
+            typing2 2s steps(9, end),
+            blink-caret .75s step-end 3;
 
-    animation-delay: 7s;
+    animation-delay: 4.2s;
     animation-fill-mode: forwards;
 
 }
@@ -1784,10 +1801,10 @@ section{
     
     
     animation: 
-            typing2 2.3s steps(10, end),
-            blink-caret .75s step-end 5;
+            typing2 2s steps(9, end),
+            blink-caret .75s step-end 3.5;
 
-    animation-delay: 10.4s;
+    animation-delay: 6.2s;
     animation-fill-mode: forwards;
 
 }
@@ -1956,4 +1973,236 @@ section{
 
 
 
+}
+
+h1{
+    font-family: 'MonoLisa', sans-serif !important;
+    //border-radius: 10%;
+}
+p{
+    font-family: 'MonoLisa', sans-serif !important;
+}
+h2{font-family: 'MonoLisa', sans-serif !important;}
+
+
+/* Responsive Timeline CSS */
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+$title-background:var(--color-platinum);
+$background-color: var(--color-steel);
+$content-background-color: var(--color-platinum);
+$content-background-gradient: var(--color-platinum);
+$time-color: black;
+$text-color:black;
+$content-width: 450px;
+
+*,
+*::before,
+*::after {
+    
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .h1{font-family: 'MonoLisa', sans-serif !important;}
+  .h3{font-family: 'MonoLisa', sans-serif !important;}
+
+  .p{
+    font-family: 'MonoLisa', sans-serif !important;
+  }
+}
+
+body{
+  font-size: 16px;
+  font-family: 'MonaLisa', sans-serif;
+}
+
+.timeline{
+    font-family: 'MonaLisa', sans-serif;
+  color: $text-color;
+  
+  h1,
+  ul li .content h2{
+    font-family: 'MonaLisa', sans-serif;
+  }
+  
+  h1{
+    font-family: 'MonaLisa', sans-serif;
+    background: $title-background;
+    padding: 70px 0;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  
+  ul{
+    font-family: 'MonaLisa', sans-serif;
+    background: $background-color;
+    padding: 50px 0;
+    
+    li{
+    font-family: 'MonaLisa', sans-serif;
+      background: $content-background-color;
+      position: relative;
+      margin: 0 auto;
+      width: 5px;
+      padding-bottom: 40px;
+      list-style-type: none;
+      
+      &:last-child{
+        padding-bottom: 7px;
+        font-family: 'MonoLisa', sans-serif;
+      }
+      
+      &:before{
+        font-family: 'MonoLisa', sans-serif;
+        content: '';
+        background: $background-color;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        border: 3px solid $content-background-color;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+      
+      .hidden {
+        opacity: 0;
+      }
+      .show {
+        font-family: 'MonoLisa', sans-serif !important;
+        opacity: 1; 
+        animation: 2s fadeInRight;
+      }
+      
+      
+      .content{
+        font-family: 'MonaLisa', sans-serif;
+        background: $content-background-color; 
+        position: relative;
+        top: 7px;
+        width: $content-width;
+        padding: 2vw;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: black;
+        z-index: 3;
+
+        
+        h2{
+            font-family: 'MonaLisa', sans-serif;
+            font-size: 2vw;
+            color: $time-color;
+            padding-bottom: 10px;
+            text-align: center;
+            border-bottom: solid 1px black;
+            padding-left: 4vw;
+            padding-right: 4vw;
+        }
+        h3{
+            align-items:center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 2vh;
+        }
+        .time2{
+            text-align: center;
+            align-items: center;
+
+            font-family: 'MonaLisa', sans-serif;
+            font-size: 2vw;
+            color: $time-color;
+            padding-bottom: 10px;
+            text-align: center;
+            
+            padding-left: 2vw;
+            padding-right: 2vw;
+
+
+
+        }
+        
+        p{
+            font-family: 'MonaLisa', sans-serif;
+          text-align: center;
+        }
+        
+        &:before{
+          content: '';
+          background: $content-background-color;
+          position: absolute;
+          top: 0px;
+          width: 38px;
+          height: 5px;
+        }
+      }
+      
+      &:nth-child(odd) .content {
+        left: 50px;
+        background: $content-background-color;
+        background: -webkit-linear-gradient(-45deg, $content-background-gradient , $content-background-color);
+        background: linear-gradient(-45deg,  $content-background-gradient , $content-background-color);
+      }
+      
+      &:nth-child(odd) .content:before {
+        left: -38px;
+      }
+      
+      &:nth-child(even) .content {
+        left: calc(-#{$content-width} - 45px);
+        background: $content-background-color;
+        background: -webkit-linear-gradient(45deg, $content-background-gradient , $content-background-color);
+        background: linear-gradient(45deg,  $content-background-gradient , $content-background-color);
+      }
+      
+      &:nth-child(even) .content:before {
+        right: -38px;
+      }
+    }
+  }
+}
+
+/* -------------------------
+   ----- Media Queries ----- 
+   ------------------------- */
+
+@media screen and (max-width: 1020px) {
+  .timeline ul li .content {
+    width: 41vw;
+  }
+  .timeline ul li:nth-child(even) .content {
+    left: calc(-41vw - 45px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .timeline ul li {
+    margin-left: 20px;
+    
+    .content {
+      width: calc(100vw - 100px);
+    
+      h2{
+        text-align: initial;
+      }
+    }
+    
+    &:nth-child(even) .content {
+      left: 45px;
+      background: $content-background-color;
+      background: -webkit-linear-gradient(-45deg, $content-background-gradient , $content-background-color);
+      background: linear-gradient(-45deg,  $content-background-gradient , $content-background-color);
+    }
+    
+    &:nth-child(even) .content:before {
+      left: -33px;
+    }
+  }
 }
