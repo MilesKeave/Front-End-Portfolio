@@ -1469,6 +1469,45 @@ header{
 
 }
 
+@media screen and (max-width: 320px) {
+
+    .about-container{
+        position: relative;
+        width: fit-content;
+
+    //display: flex;
+    
+    background-color: var(--color-platinum);
+    // display: inline-block !important;
+    
+    width:100vw;
+    /* grid-template-columns: 1fr 1fr; */
+   
+    
+    overflow: hidden;
+
+    min-height: 60vw;
+    max-height: 90vw ;
+    
+
+    
+    
+    
+    
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    
+    
+
+    max-width: 100% !important;
+
+
+    }
+
+
+}
 
 
 .main-title {
