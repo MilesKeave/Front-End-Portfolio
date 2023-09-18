@@ -1546,6 +1546,7 @@ header{
 	position: fixed;
 	z-index: 1;
 	display: none;
+    width:100vw;
 }
 
 .ms-default {
@@ -2232,6 +2233,11 @@ body{
         left:0;
         transform: translateX(-50%);
         width: 450px;
+        h1{
+            font-size: 10vw;
+            text-align: center;
+            background-color: var(--color-platinum);
+        }
     }
 
 
