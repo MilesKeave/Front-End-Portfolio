@@ -368,7 +368,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-    width: fit-content;
+    width: 100vw;
 
     //display: flex;
     
@@ -2061,12 +2061,16 @@ body{
 
 .timeline{
     font-family: 'MonaLisa', sans-serif;
-  color: $text-color;
+    color: $text-color;
+    width: 100vw;
+    align-items:center;
+    justify-content: center;
+
   
-  h1,
-  ul li .content h2{
-    font-family: 'MonaLisa', sans-serif;
-  }
+    h1,
+    ul li .content h2{
+        font-family: 'MonaLisa', sans-serif;
+    }
   
   h1{
     font-family: 'MonaLisa', sans-serif;
@@ -2220,6 +2224,19 @@ body{
     left: calc(-41vw - 45px);
   }
 }
+
+@media screen and (max-width: 450px) {
+    .timeline{
+        align-items:center;
+        justify-content: center;
+        left:0;
+    }
+    
+
+
+}
+
+
 
 @media screen and (max-width: 700px) {
   .timeline ul li {

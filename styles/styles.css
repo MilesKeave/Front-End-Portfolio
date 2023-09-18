@@ -336,8 +336,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100vw;
   background-color: var(--color-platinum);
   width: 100vw;
   /* grid-template-columns: 1fr 1fr; */
@@ -1674,6 +1673,9 @@ body {
 .timeline {
   font-family: "MonaLisa", sans-serif;
   color: black;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
 }
 .timeline h1,
 .timeline ul li .content h2 {
@@ -1803,6 +1805,13 @@ body {
   }
   .timeline ul li:nth-child(even) .content {
     left: calc(-41vw - 45px);
+  }
+}
+@media screen and (max-width: 450px) {
+  .timeline {
+    align-items: center;
+    justify-content: center;
+    left: 0;
   }
 }
 @media screen and (max-width: 700px) {
