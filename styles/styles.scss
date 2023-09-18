@@ -2226,6 +2226,13 @@ body{
   }
 }
 
+@media only screen and (max-device-width: 480px) {
+    .about-container{
+       display:block;
+       position: relative;
+    }
+}
+
 @media screen and (max-width: px) {
     .timeline{
         align-items:center;
