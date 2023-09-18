@@ -1713,6 +1713,7 @@ body {
   background: var(--color-platinum);
   font-size: 2.5em;
   text-align: center;
+  border-radius: 10vw;
 }
 .timeline ul {
   font-family: "MonaLisa", sans-serif;
