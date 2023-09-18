@@ -342,7 +342,6 @@ header {
   /* grid-template-columns: 1fr 1fr; */
   overflow: hidden;
   min-height: 60vw;
-  max-height: 90vw;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -354,7 +353,7 @@ header {
   padding-left: 3vw;
   padding-right: 3vw;
   height: 98%;
-  max-width: 50vw;
+  width: 50vw;
   animation: 1.5s fadeInRight;
   display: block;
   justify-content: center;
@@ -366,12 +365,12 @@ header {
   margin-top: 10%;
   background-image: url("../img/Screen Shot 2023-09-08 at 3.47.13 PM.png");
   background-size: cover;
-  background-position-x: 20%;
+  background-position-x: 0%;
   background-position-y: 80%;
   /*  overflow:hidden; */
   height: 50vw;
   width: 35vw;
-  max-width: 40vw;
+  width: 40vw;
   overflow: hidden;
   background-repeat: no-repeat;
   display: flex;
@@ -1232,8 +1231,12 @@ header {
   padding-bottom: 2.3vw;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .about-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
     position: relative;
     width: -moz-fit-content;
     width: fit-content;
@@ -1241,13 +1244,36 @@ header {
     width: 100vw;
     /* grid-template-columns: 1fr 1fr; */
     overflow: hidden;
-    min-height: 60vw;
-    max-height: 90vw;
+    height: 65vh;
     position: relative;
     align-items: center;
     justify-content: center;
     top: 0;
+    padding-left: 5vw;
     max-width: 100% !important;
+  }
+  .about-container .right-about {
+    top: 0;
+    width: 100vw !important;
+    height: 20vh;
+    border: 0px;
+  }
+  .about-container .right-about .profile-img {
+    width: 80vw;
+    height: 50vw;
+    transform: translateY(-10vh);
+    background-position-x: 0%;
+    background-position-y: 20%;
+  }
+  .about-container .left-about {
+    width: 85vw !important;
+    border: solid black 1px;
+    border-radius: 10vw;
+  }
+  .about-container .left-about .btn-con {
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
   }
 }
 .main-title {
@@ -1807,7 +1833,7 @@ body {
     left: calc(-41vw - 45px);
   }
 }
-@media screen and (max-width: px) {
+@media screen and (max-width: 500px) {
   .timeline {
     align-items: center;
     justify-content: center;

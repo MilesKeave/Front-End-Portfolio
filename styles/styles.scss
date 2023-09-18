@@ -382,7 +382,7 @@ header{
     overflow: hidden;
 
     min-height: 60vw;
-    max-height: 90vw ;
+    
     
 
     
@@ -406,7 +406,7 @@ header{
         padding-right:3vw;
         
         height: 98%;
-        max-width: 50vw;
+        width: 50vw;
         animation: 1.5s fadeInRight;
         display: block;
         justify-content: center;
@@ -425,7 +425,7 @@ header{
 
             background-image: url('../img/Screen Shot 2023-09-08 at 3.47.13 PM.png');
             background-size: cover;
-            background-position-x: 20%;
+            background-position-x: 0%;
             background-position-y: 80%;
            /*  overflow:hidden; */
             height: 50vw;;
@@ -433,7 +433,7 @@ header{
 
             width:35vw;
             
-            max-width: 40vw;
+            width: 40vw;
             
             overflow:hidden;
             
@@ -1469,42 +1469,78 @@ header{
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     .about-container{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
         position: relative;
         width: fit-content;
 
     //display: flex;
     
-    background-color: var(--color-platinum);
+        background-color: var(--color-platinum);
     // display: inline-block !important;
     
-    width:100vw;
+        width:100vw;
     /* grid-template-columns: 1fr 1fr; */
    
     
-    overflow: hidden;
+        overflow: hidden;
 
-    min-height: 60vw;
-    max-height: 90vw ;
-    
-
-    
-    
-    
-    
-    position:relative;
-    align-items: center;
-    justify-content: center;
-    top:0;
-    
+        height: 65vh;
     
 
-    max-width: 100% !important;
+    
+    
+    
+    
+        position:relative;
+        align-items: center;
+        justify-content: center;
+        top:0;
+        padding-left:5vw;
+        
+        
+
+        max-width: 100% !important;
+        .right-about{
+            top:0;
+
+            width: 100vw !important;
+            height: 20vh;
+            border: 0px;
+            
+            .profile-img{
+                width: 80vw;
+                height: 50vw;
+                transform:translateY(-10vh);
+                background-position-x: 0%;
+                background-position-y: 20%;
+            }
+            
+    
+        }
+        .left-about{
+            width:85vw !important;
+            
+            border: solid black 1px;
+            border-radius: 10vw;
+            .btn-con{
+                width:70vw;
+                align-items:center;
+                justify-content:center;
+
+            }
+
+
+        }
 
 
     }
+
 
 
 }
@@ -2228,7 +2264,7 @@ body{
 
 
 
-@media screen and (max-width: px) {
+@media screen and (max-width: 500px) {
     .timeline{
         align-items:center;
         justify-content: center;
