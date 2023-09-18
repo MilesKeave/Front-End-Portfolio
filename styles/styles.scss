@@ -2222,11 +2222,11 @@ body{
     width: 41vw;
   }
   .timeline ul li:nth-child(even) .content {
-    left: calc(-41vw);
+    left: calc(-41vw - 45px);
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: px) {
     .timeline{
         align-items:center;
         justify-content: center;
