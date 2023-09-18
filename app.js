@@ -1130,7 +1130,7 @@ window.onscroll = function () {
     console.log(document.documentElement.scrollTop);
     for(var i = 0; i < timeLine.length; i++) {
 		console.log(document.documentElement.scrollTop);
-        if (document.documentElement.scrollTop >= w/2 + ((i )*280) ) {
+        if (document.documentElement.scrollTop >= w/2 + ((i )*250) ) {
             timeLine[i].classList.remove("hidden");
 			timeLine[i].classList.add("show");
 
