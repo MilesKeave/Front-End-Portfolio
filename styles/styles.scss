@@ -2076,7 +2076,7 @@ body{
   h1{
     font-family: 'MonaLisa', sans-serif;
     background: $title-background;
-    padding: 70px 0;
+    
     font-size: 2.5em;
     text-align: center;
   }
@@ -2222,7 +2222,7 @@ body{
     width: 41vw;
   }
   .timeline ul li:nth-child(even) .content {
-    left: calc(-41vw - 45px);
+    left: calc(-41vw);
   }
 }
 
@@ -2232,11 +2232,13 @@ body{
         justify-content: center;
         left:0;
         transform: translateX(-50%);
-        width: 450px;
+        width: 80vw;
         h1{
             width: 56vw;
-            height: 1vh;
-            font-size: 10vw;
+            height: 20vw;
+            border-radius:10vw;
+            justify-content: center;
+            font-size: 8vw;
             text-align: center;
             background-color: var(--color-platinum);
             transform: translateX(22vw);
