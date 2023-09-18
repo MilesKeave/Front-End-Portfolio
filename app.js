@@ -1123,10 +1123,14 @@ const nav = document.getElementsByClassName("nav-bar");
 
 
 const timeLine = document.getElementsByClassName("content");
+
+
 window.onscroll = function () { 
+	var w = window.innerWidth;
     console.log(document.documentElement.scrollTop);
     for(var i = 0; i < timeLine.length; i++) {
-        if (document.documentElement.scrollTop >= 500 + ((i +1)*280) ) {
+		console.log(document.documentElement.scrollTop);
+        if (document.documentElement.scrollTop >= w/2 + ((i )*280) ) {
             timeLine[i].classList.remove("hidden");
 			timeLine[i].classList.add("show");
 

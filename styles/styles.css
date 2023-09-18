@@ -1841,6 +1841,7 @@ body {
     left: 0;
     transform: translateX(-50%);
     width: 80vw;
+    padding-bottom: 20vw;
   }
   .timeline h1 {
     width: 56vw;
