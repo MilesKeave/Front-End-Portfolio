@@ -2234,9 +2234,26 @@ body{
         transform: translateX(-50%);
         width: 450px;
         h1{
+            width: 56vw;
+            height: 1vh;
             font-size: 10vw;
             text-align: center;
             background-color: var(--color-platinum);
+            transform: translateX(22vw);
+        }
+        .content{
+            span{
+            font-size: 3.5vw;
+            padding-left: 3vw;
+            }
+            time{
+                font-size: 3.5vw;
+                }
+            p{
+                font-size: 3vw;
+
+            }
+            
         }
     }
 
