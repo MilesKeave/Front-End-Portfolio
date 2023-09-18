@@ -1232,7 +1232,7 @@ header {
   padding-bottom: 2.3vw;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
   .about-container {
     position: relative;
     width: -moz-fit-content;
@@ -1805,12 +1805,6 @@ body {
   }
   .timeline ul li:nth-child(even) .content {
     left: calc(-41vw - 45px);
-  }
-}
-@media only screen and (max-device-width: 480px) {
-  .about-container {
-    display: block;
-    position: relative;
   }
 }
 @media screen and (max-width: px) {

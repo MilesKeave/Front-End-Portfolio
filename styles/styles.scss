@@ -1469,7 +1469,7 @@ header{
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
 
     .about-container{
         position: relative;
@@ -2226,12 +2226,7 @@ body{
   }
 }
 
-@media only screen and (max-device-width: 480px) {
-    .about-container{
-       display:block;
-       position: relative;
-    }
-}
+
 
 @media screen and (max-width: px) {
     .timeline{
