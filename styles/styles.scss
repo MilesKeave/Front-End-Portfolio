@@ -2057,6 +2057,7 @@ h1{
 }
 p{
     font-family: 'MonoLisa', sans-serif !important;
+    text-align: left;
 }
 h2{font-family: 'MonoLisa', sans-serif !important;}
 
@@ -2088,6 +2089,7 @@ $content-width: 450px;
 
   .p{
     font-family: 'MonoLisa', sans-serif !important;
+    text-align: left;
   }
 }
 
@@ -2212,7 +2214,7 @@ body{
         
         p{
             font-family: 'MonaLisa', sans-serif;
-          text-align: center;
+            text-align: left;
         }
         
         &:before{
@@ -2293,6 +2295,7 @@ body{
                 }
             p{
                 font-size: 3vw;
+                text-align: left;
 
             }
             
@@ -2301,6 +2304,17 @@ body{
 
 
 
+}
+
+.italics{
+
+    font-style: italic;
+    font-size: 1.5vw;
+}
+
+#italics::before{
+    content: "\a";
+    white-space: pre;
 }
 
 

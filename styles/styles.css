@@ -1662,6 +1662,7 @@ h1 {
 
 p {
   font-family: "MonoLisa", sans-serif !important;
+  text-align: left;
 }
 
 h2 {
@@ -1690,6 +1691,7 @@ h2 {
 *::before .p,
 *::after .p {
   font-family: "MonoLisa", sans-serif !important;
+  text-align: left;
 }
 
 body {
@@ -1796,7 +1798,7 @@ body {
 }
 .timeline ul li .content p {
   font-family: "MonaLisa", sans-serif;
-  text-align: center;
+  text-align: left;
 }
 .timeline ul li .content:before {
   content: "";
@@ -1862,8 +1864,19 @@ body {
   }
   .timeline .content p {
     font-size: 3vw;
+    text-align: left;
   }
 }
+.italics {
+  font-style: italic;
+  font-size: 1.5vw;
+}
+
+#italics::before {
+  content: "\a";
+  white-space: pre;
+}
+
 @media screen and (max-width: 700px) {
   .timeline ul li {
     margin-left: 20px;
